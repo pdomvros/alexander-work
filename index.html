@@ -13,6 +13,8 @@
       text-align: center;
       margin: 0 auto;
       max-width: 1200px;
+      /* Αυξήσαμε το font-size σε ~125% */
+      font-size: 125%;
     }
     h1, h2 {
       color: #FFD700;
@@ -42,7 +44,7 @@
       margin-bottom: 10px;
     }
     .slide p {
-      font-size: 1.2em;
+      font-size: 1em; /* κληρονομεί το 125% από το body */
     }
     .nav-btn {
       cursor: pointer;
@@ -136,7 +138,7 @@
     }
     .result {
       margin-top: 20px;
-      font-size: 1.2em;
+      font-size: 1em;
       display: none;
     }
     .bibliography {
@@ -424,11 +426,11 @@
   </script>
 
   <!-- 4) ΤΡΙΑ ΕΠΙΠΕΔΑ ΥΠΟΔΕΙΞΕΩΝ (ΔΙΟΡΘΩΜΕΝΟ) -->
-  <h2 class="section-title">Ερωτήσεις </h2>
+  <h2 class="section-title">Ερωτήσεις με 3 Επίπεδα Υποδείξεων</h2>
   <div class="hints-section">
 
     <div class="question">
-      <p>1️⃣ Γιατί οι πόλεις που ίδρυσε ο Αλέξανδρος αποτελούν το αποκορύφωμα του εκπολιτιστικού του έργου;</p>
+      <p>1) Γιατί οι πόλεις που ίδρυσε ο Αλέξανδρος αποτελούν το αποκορύφωμα του εκπολιτιστικού του έργου;</p>
       <button onclick="showHint('hint1-1')">Υπόδειξη 1</button>
       <button onclick="showHint('hint1-2')">Υπόδειξη 2</button>
       <button onclick="showHint('hint1-3')">Πλήρης Απάντηση</button>
@@ -442,7 +444,7 @@
     </div>
 
     <div class="question">
-      <p>2️⃣ Τι ονομάζουμε σήμερα πολυπολιτισμική κοινωνία και ποια η σχέση της με την πολιτική που εφάρμοσε ο Αλέξανδρος;</p>
+      <p>2) Τι ονομάζουμε σήμερα πολυπολιτισμική κοινωνία και ποια η σχέση της με την πολιτική που εφάρμοσε ο Αλέξανδρος;</p>
       <button onclick="showHint('hint2-1')">Υπόδειξη 1</button>
       <button onclick="showHint('hint2-2')">Υπόδειξη 2</button>
       <button onclick="showHint('hint2-3')">Πλήρης Απάντηση</button>
@@ -456,7 +458,7 @@
     </div>
 
     <div class="question">
-      <p>3️⃣ Το εκπολιτιστικό έργο του Αλέξανδρου διαπνέεται από το πνεύμα της ελληνικής παιδείας. Αποδείξτε ότι η άποψη είναι ορθή.</p>
+      <p>3) Το εκπολιτιστικό έργο του Αλέξανδρου διαπνέεται από το πνεύμα της ελληνικής παιδείας. Αποδείξτε ότι η άποψη είναι ορθή.</p>
       <button onclick="showHint('hint3-1')">Υπόδειξη 1</button>
       <button onclick="showHint('hint3-2')">Υπόδειξη 2</button>
       <button onclick="showHint('hint3-3')">Πλήρης Απάντηση</button>
