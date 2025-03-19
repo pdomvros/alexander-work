@@ -27,7 +27,7 @@
 
     /* Στυλ Slideshow */
     .slideshow-container {
-      max-width: 900px; 
+      max-width: 900px;
       margin: 20px auto;
       background-color: #111;
       padding: 20px;
@@ -105,7 +105,7 @@
       color: #fff !important;
     }
 
-    /* Στυλ Δουλεύοντας με μια πηγή */
+    /* Στυλ Δραστηριότητας Πηγής */
     .source-section {
       background-color: #111;
       padding: 20px;
@@ -160,6 +160,7 @@
       padding: 15px;
       border-radius: 8px;
       margin-bottom: 30px;
+      text-align: left;
     }
     .hint {
       display: none;
@@ -169,6 +170,8 @@
       margin-top: 10px;
       text-align: left;
     }
+
+    /* Βίντεο */
     .video-container {
       margin: 40px auto;
       max-width: 900px;
@@ -195,33 +198,38 @@
   </div>
 
   <!-- =============== 1) SLIDESHOW =============== -->
-  <h2 class="section-title">Κύρια Σημεία &amp; Έννοιες</h2>
+  <h2 class="section-title">Κύρια Σημεία & Έννοιες</h2>
   <div class="slideshow-container">
     <div class="slide">
       <h3>1. Ανάμειξη Πολιτισμών</h3>
       <p>Ο Αλέξανδρος επιδίωξε τη συνύπαρξη και την ανάμειξη Ελλήνων και Περσών, μέσω γάμων και κοινών εθίμων.</p>
       <p>Στους Μαζικούς Γάμους στα Σούσα (324 π.Χ.) παντρεύτηκαν Μακεδόνες με Περσίδες, ενισχύοντας τη σύμπνοια των λαών.</p>
     </div>
+
     <div class="slide">
       <h3>2. Διοικητική Ενοποίηση</h3>
       <p>Διόρισε Πέρσες και Μακεδόνες σε θέσεις εξουσίας, δημιουργώντας ενιαία διοίκηση.</p>
       <p>Παραδείγματα Περσών σατραπών ήταν ο Μαζαίος στη Βαβυλώνα και ο Αριάρθης στην Καππαδοκία.</p>
     </div>
+
     <div class="slide">
       <h3>3. Πολιτιστική Πολιτική</h3>
       <p>Στήριξε την πολυθρησκευτικότητα και τον σεβασμό στα τοπικά έθιμα κάθε λαού.</p>
       <p>Σεβάστηκε ιερά και ναούς, όπως αυτούς στο Αμμώνιο Δία στην όαση Σίβα και τους περσικούς ναούς στη Βαβυλώνα.</p>
     </div>
+
     <div class="slide">
       <h3>4. Οικονομική Ενοποίηση</h3>
       <p>Θέσπισε κοινό νόμισμα και επέκτεινε το εμπόριο με νέους δρόμους και αγορές.</p>
       <p>Τα αργυρά τετράδραχμα με την κεφαλή του Ηρακλή κυκλοφορούσαν σε όλη την αυτοκρατορία.</p>
     </div>
+
     <div class="slide">
       <h3>5. Ίδρυση Πόλεων</h3>
       <p>Ίδρυσε δεκάδες πόλεις (Αλεξάνδρειες) ως εμπορικά, στρατιωτικά και πολιτιστικά κέντρα.</p>
-      <p>Χαρακτηριστικά παραδείγματα: Αλεξάνδρεια (Αίγυπτος) &amp; Αλεξάνδρεια Εσχάτη (Κεντρική Ασία).</p>
+      <p>Χαρακτηριστικά παραδείγματα: Αλεξάνδρεια (Αίγυπτος) & Αλεξάνδρεια Εσχάτη (Κεντρική Ασία).</p>
     </div>
+
     <button id="prevBtn" class="nav-btn" onclick="plusSlides(-1)">◀ Προηγούμενο</button>
     <button id="nextBtn" class="nav-btn" onclick="plusSlides(1)">Επόμενο ▶</button>
   </div>
@@ -397,61 +405,76 @@
   </script>
 
   <!-- =============== 4) ΤΡΙΑ ΕΠΙΠΕΔΑ ΥΠΟΔΕΙΞΕΩΝ =============== -->
-  <!DOCTYPE html>
-<html lang="el">
-<head>
-  <meta charset="UTF-8">
-  <title>Διαδραστικές Υποδείξεις - Ο Αλέξανδρος και το Εκπολιτιστικό του Έργο</title>
-  <style>
-    body { font-family: 'Comic Sans MS', cursive, sans-serif; background-color: #000; color: #FFD700; padding: 20px; text-align: center; }
-    h1 { margin-bottom: 20px; }
-    .question { background-color: #222; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
-    button { padding: 8px 15px; background-color: #FFD700; color: #000; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
-    button:hover { background-color: #daa520; }
-    .hint { display: none; background-color: #111; padding: 10px; border-radius: 8px; margin-top: 10px; }
-  </style>
-</head>
-<body>
-<h1>Δουλεύοντας με Υποδείξεις</h1>
+  <h2 class="section-title">Ερωτήσεις </h2>
+  <div class="hints-section">
 
-<div class="question">
-  <p>1️⃣ Γιατί οι πόλεις που ίδρυσε ο Αλέξανδρος αποτελούν το αποκορύφωμα του εκπολιτιστικού του έργου;</p>
-  <button onclick="showHint('hint1-1')">Υπόδειξη 1</button>
-  <button onclick="showHint('hint1-2')">Υπόδειξη 2</button>
-  <button onclick="showHint('hint1-3')">Πλήρης Απάντηση</button>
+    <div class="question">
+      <p>1) Γιατί οι πόλεις που ίδρυσε ο Αλέξανδρος αποτελούν το αποκορύφωμα του εκπολιτιστικού του έργου;</p>
+      <button onclick="showHint('hint1-1')">Υπόδειξη 1</button>
+      <button onclick="showHint('hint1-2')">Υπόδειξη 2</button>
+      <button onclick="showHint('hint1-3')">Πλήρης Απάντηση</button>
 
-  <div id="hint1-1" class="hint">✅ Ίδρυσε πολλές νέες πόλεις με ελληνικά χαρακτηριστικά.</div>
-  <div id="hint1-2" class="hint">✅ Οι πόλεις έγιναν κέντρα εμπορίου και ελληνικού πολιτισμού στην Ανατολή.</div>
-  <div id="hint1-3" class="hint">✅ Οι πόλεις αποτέλεσαν το κύριο μέσο διάδοσης της ελληνικής γλώσσας, των τεχνών και της παιδείας. Ήταν οργανωμένες με ελληνικά πρότυπα και επέτρεψαν την ανάμειξη λαών και πολιτισμών.</div>
-</div>
+      <div id="hint1-1" class="hint">
+        ✅ Ίδρυσε πολλές νέες πόλεις με ελληνικά χαρακτηριστικά.
+      </div>
+      <div id="hint1-2" class="hint">
+        ✅ Οι πόλεις έγιναν κέντρα εμπορίου και ελληνικού πολιτισμού στην Ανατολή.
+      </div>
+      <div id="hint1-3" class="hint">
+        ✅ Οι πόλεις αποτέλεσαν το κύριο μέσο διάδοσης της ελληνικής γλώσσας, των τεχνών και της παιδείας. 
+        Ήταν οργανωμένες με ελληνικά πρότυπα και επέτρεψαν την ανάμειξη λαών και πολιτισμών.
+      </div>
+    </div>
 
-<div class="question">
-  <p>2️⃣ Τι ονομάζουμε σήμερα πολυπολιτισμική κοινωνία και ποια η σχέση της με την πολιτική που εφάρμοσε ο Αλέξανδρος;</p>
-  <button onclick="showHint('hint2-1')">Υπόδειξη 1</button>
-  <button onclick="showHint('hint2-2')">Υπόδειξη 2</button>
-  <button onclick="showHint('hint2-3')">Πλήρης Απάντηση</button>
+    <div class="question">
+      <p>2) Τι ονομάζουμε σήμερα πολυπολιτισμική κοινωνία και ποια η σχέση της με την πολιτική που εφάρμοσε ο Αλέξανδρος;</p>
+      <button onclick="showHint('hint2-1')">Υπόδειξη 1</button>
+      <button onclick="showHint('hint2-2')">Υπόδειξη 2</button>
+      <button onclick="showHint('hint2-3')">Πλήρης Απάντηση</button>
 
-  <div id="hint2-1" class="hint">✅ Πολυπολιτισμική κοινωνία: συνύπαρξη διαφορετικών λαών και πολιτισμών.</div>
-  <div id="hint2-2" class="hint">✅ Ο Αλέξανδρος ενίσχυσε αυτή τη συνύπαρξη με μεικτούς γάμους και αποδοχή των τοπικών εθίμων.</div>
-  <div id="hint2-3" class="hint">✅ Όπως η σύγχρονη πολυπολιτισμική κοινωνία, έτσι και ο Αλέξανδρος δημιούργησε μια αυτοκρατορία με διαφορετικούς λαούς που ζούσαν μαζί, αντάλλασσαν πολιτισμό και ανέπτυξαν κοινές αξίες.</div>
-</div>
+      <div id="hint2-1" class="hint">
+        ✅ Πολυπολιτισμική κοινωνία: συνύπαρξη διαφορετικών λαών και πολιτισμών.
+      </div>
+      <div id="hint2-2" class="hint">
+        ✅ Ο Αλέξανδρος ενίσχυσε αυτή τη συνύπαρξη με μεικτούς γάμους και αποδοχή των τοπικών εθίμων.
+      </div>
+      <div id="hint2-3" class="hint">
+        ✅ Όπως η σύγχρονη πολυπολιτισμική κοινωνία, έτσι και ο Αλέξανδρος δημιούργησε μια αυτοκρατορία 
+        με διαφορετικούς λαούς που ζούσαν μαζί, αντάλλασσαν πολιτισμό και ανέπτυξαν κοινές αξίες.
+      </div>
+    </div>
 
-<div class="question">
-  <p>3️⃣ Το εκπολιτιστικό έργο του Αλέξανδρου διαπνέεται από το πνεύμα της ελληνικής παιδείας. Αποδείξτε ότι η άποψη είναι ορθή.</p>
-  <button onclick="showHint('hint3-1')">Υπόδειξη 1</button>
-  <button onclick="showHint('hint3-2')">Υπόδειξη 2</button>
-  <button onclick="showHint('hint3-3')">Πλήρης Απάντηση</button>
+    <div class="question">
+      <p>3) Το εκπολιτιστικό έργο του Αλέξανδρου διαπνέεται από το πνεύμα της ελληνικής παιδείας. Αποδείξτε ότι η άποψη είναι ορθή.</p>
+      <button onclick="showHint('hint3-1')">Υπόδειξη 1</button>
+      <button onclick="showHint('hint3-2')">Υπόδειξη 2</button>
+      <button onclick="showHint('hint3-3')">Πλήρης Απάντηση</button>
 
-  <div id="hint3-1" class="hint">✅ Η ελληνική παιδεία δίνει αξία στη γνώση, την τέχνη και τη φιλοσοφία.</div>
-  <div id="hint3-2" class="hint">✅ Ο Αλέξανδρος μετέφερε την ελληνική γλώσσα και παιδεία στην Ανατολή μέσω των πόλεων που ίδρυσε.</div>
-  <div id="hint3-3" class="hint">✅ Ο Αλέξανδρος προώθησε την ελληνική παιδεία ιδρύοντας σχολές και πόλεις με ελληνική διοίκηση και πολιτισμό. Η γλώσσα, η τέχνη και η επιστήμη εξαπλώθηκαν σε όλη την αυτοκρατορία του.</div>
-</div>
+      <div id="hint3-1" class="hint">
+        ✅ Η ελληνική παιδεία δίνει αξία στη γνώση, την τέχνη και τη φιλοσοφία.
+      </div>
+      <div id="hint3-2" class="hint">
+        ✅ Ο Αλέξανδρος μετέφερε την ελληνική γλώσσα και παιδεία στην Ανατολή μέσω των πόλεων που ίδρυσε.
+      </div>
+      <div id="hint3-3" class="hint">
+        ✅ Ο Αλέξανδρος προώθησε την ελληνική παιδεία ιδρύοντας σχολές και πόλεις με ελληνική διοίκηση και πολιτισμό. 
+        Η γλώσσα, η τέχνη και η επιστήμη εξαπλώθηκαν σε όλη την αυτοκρατορία του.
+      </div>
+    </div>
+  </div>
 
-<script>
-  function showHint(hintId) {
-    document.getElementById(hintId).style.display = 'block';
-  }
-</script>
+  <script>
+    function showHint(hintId) {
+      // Εμφανίζει τη συγκεκριμένη υπόδειξη, ΧΩΡΙΣ να κρύβει τις προηγούμενες
+      document.getElementById(hintId).style.display = 'block';
+    }
+  </script>
+
+  <!-- =============== 5) ΒΙΝΤΕΟ =============== -->
+  <h2 class="section-title">Παρακολούθησε ένα video από το SchoolForAll</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/KwGRay2zxwc" allowfullscreen></iframe>
+  </div>
 
 </body>
 </html>
