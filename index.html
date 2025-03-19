@@ -186,6 +186,24 @@
       border: none;
       border-radius: 8px;
     }
+
+    /* Πρόσθετο κουμπί στο τέλος */
+    .exercise-btn {
+      cursor: pointer;
+      padding: 12px 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      margin: 20px 0;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .exercise-btn:hover {
+      background-color: #daa520;
+    }
+
   </style>
 </head>
 <body>
@@ -478,7 +496,6 @@
 
   <script>
     function showHint(hintId) {
-      // ΔΕΝ κρύβουμε τις άλλες υποδείξεις. Απλώς εμφανίζουμε τη συγκεκριμένη.
       document.getElementById(hintId).style.display = 'block';
     }
   </script>
@@ -488,6 +505,12 @@
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/KwGRay2zxwc" allowfullscreen></iframe>
   </div>
+
+  <!-- ========== Κουμπί για Εξάσκηση ========== -->
+  <button class="exercise-btn"
+    onclick="window.open('https://pdomvros.github.io/alexander-test/', '_blank');">
+    Για Εξάσκηση
+  </button>
 
 </body>
 </html>
